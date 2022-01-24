@@ -1,4 +1,4 @@
-version: '2'
+version: '3'
 services:
   rails:
     restart: always
@@ -11,3 +11,5 @@ services:
       - 3000:3000
     volumes:
       - .:/app
+    command:
+      - /app/start.sh
